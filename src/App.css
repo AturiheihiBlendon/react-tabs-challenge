@@ -1,32 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
 }
 
 .container {
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 /* TODO: Add css here */
 .tabs {
-
+  display: flex;
+  background-color: #333;
 }
 
+.tab-button {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  height: 50px;
+}
+
+.tab-button.active {
+  background-color: #114277;
+}
+
+.tab-button:hover {
+  background-color: #555;
+}
+
+.tab-content {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.tab-content div {
+  padding: 20px;
+  background-color: white;
+}
+
+.title {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.error {
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
 
 @media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
 
-    .container {
-        width: 100%;
-    }
-
-    .content {
-        padding: 50px;
-    }
+  .content {
+    padding: 50px;
+  }
 }
